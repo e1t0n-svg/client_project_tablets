@@ -1,0 +1,120 @@
+.skip {
+  position: absolute;
+  top: -500px;
+}
+
+.skip:focus {
+  top: 50px;
+}
+
+a:hover,
+a:focus {
+  border: dotted 2px #800080;
+}
+
+h1 {
+  color: #000000;
+}
+main {
+  padding: 0px 15px 0px 15px;
+}
+section {
+  font-size: 16px;
+  /* display:grid; */
+  /* grid-template-columns: repeat(2, 2fr); */
+  gap: 20px;
+}
+.active {
+  background-color: #ffcb05;
+  color: #00274c;
+}
+/* .whyuse, .studentid{
+   grid-column: 2 / 3;
+} */
+
+/* #guidancebacked, #alwaysaccesible{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+} */
+/* .popular, .connect{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+} */
+img {
+  width: 80%;
+  padding: 50px;
+}
+header img {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  padding: 50px;
+}
+/* .modern{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+} */
+nav {
+  background-color: #00274c;
+  padding: 25px 0;
+  text-align: right;
+  padding: 35px 0px 35px 0px;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+nav ul li {
+  margin-left: 0;
+}
+.human_resources ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+ul li {
+  margin-left: 25px;
+}
+.popular ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.popular ul li:last-child {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+  .skip a {
+    position: absolute;
+    margin-bottom: 65px;
+    z-index: -1000px;
+  }
+
+  .skip:focus {
+    left: 25px;
+  }
+
+  a:hover,
+  a:focus {
+    border: dotted 2px #800080;
+  }
+
+  h1 {
+    color: #000000;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  legend {
+    display: block;
+    margin: 0 auto;
+  }
+}
